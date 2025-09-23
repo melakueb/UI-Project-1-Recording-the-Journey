@@ -64,11 +64,11 @@
         let existingIndex = entries.findIndex(e => e.date === newEntryDate)
         if (existingIndex !== -1) {
             entries[existingIndex] = entry
-            savedMessage = "✔ Entry updated for " + newEntryDate
+            savedMessage = "Entry updated for " + newEntryDate
         } 
         else {
             entries.push(entry)
-            savedMessage = "✔ Entry saved for " + newEntryDate
+            savedMessage = "Entry saved for " + newEntryDate
         }
         daysActive = entries.length
     }
